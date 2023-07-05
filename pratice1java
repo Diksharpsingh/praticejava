@@ -1,0 +1,53 @@
+import java.util.Scanner;
+public class pratice {
+    public static void main(String[] args){
+        System.out.println("Enter the string:");
+        Scanner sc=new Scanner(System.in);
+        String s = sc.nextLine();
+        int count=1;
+        for(int i=0;i<s.length()-1;i++){
+            if((s.charAt(i)==' ') && (s.charAt(i+1)!=' ')){
+                count++;
+
+            }
+        }
+        System.out.println("The total no of words are:"+count);
+    }
+
+}
+
+public class pratice {
+    public static void main(String[] args){
+        Rectangle r1= new Rectangle();
+        r1.length=10;
+        r1.width=20;
+        System.out.println(r1.area());
+    }
+
+}
+class Rectangle{
+    int length;
+    int width;
+    public int area(){
+        return length * width;
+    }
+}
+
+public class pratice {
+    public static void main(String[] args){
+        Triangle t1= new Triangle();
+        t1.base=3.00;
+        t1.height=4.00;
+        System.out.println(t1.area());
+    }
+
+}
+class Triangle{
+    double base;
+    double height;
+    public double area(){
+        return (base*height)/2;
+    }
+}
+
+
